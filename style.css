@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-:root{
+
+:root {
     --dark-1-color: rgb(19, 19, 19);
     --dark-2-color: rgb(66, 66, 66);
     --dark-3-color: rgb(114, 114, 114);
@@ -12,14 +14,19 @@
 
 /* shared styles */
 
-main{
+body{
+    font-family: "Work Sans", sans-serif;
+}
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
-section{
+
+section {
     margin-bottom: 130px;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: var(--orange-primary-color);
     color: white;
     font-size: 1.2rem;
@@ -28,16 +35,19 @@ section{
     border: none;
     border-radius: 8px;
 }
-.primary-desc{
+
+.primary-desc {
     color: var(--dark-3-color);
     line-height: 26px;
 }
+
 /* nav styles */
 
-header{
+header {
     background-color: rgba(255, 144, 14, 0.1);
 }
-.nav-bar{
+
+.nav-bar {
     display: flex;
     justify-content: space-between;
     max-width: 1440px;
@@ -45,17 +55,20 @@ header{
     align-items: center;
     padding: 60px 0;
 }
-.nav-bar h3{
+
+.nav-bar h3 {
     font-size: 2.8rem;
     color: var(--dark-1-color);
     font-weight: 700;
 }
-.nav-items{
+
+.nav-items {
     display: flex;
     list-style: none;
     gap: 50px;
 }
-.nav-items li a{
+
+.nav-items li a {
     text-decoration: none;
     font-size: 1.1rem;
     color: var(--dark-2-color);
@@ -63,67 +76,76 @@ header{
 
 /* banner styles */
 
-.banner{
+.banner {
     max-width: 1440px;
     margin: 0 auto;
     padding-bottom: 45px;
 }
-.banner-content{
+
+.banner-content {
     max-width: 862px;
     margin: 50px auto;
     text-align: center;
 }
-.banner-content h1{
+
+.banner-content h1 {
     font-size: 4rem;
     font-weight: 700;
     color: var(--dark-1-color);
 }
-.banner-content p{
+
+.banner-content p {
     margin: 35px 0;
 }
 
 /* Feature styles */
 
-.feature{
+.feature {
     display: flex;
     gap: 73px;
     align-items: center;
 }
-.feature-content{
+
+.feature-content {
     max-width: 540px;
 }
-.feature-image{
+
+.feature-image {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-#span-1{
+
+#span-1 {
     font-size: 2.8rem;
     font-weight: 500;
     color: var(--dark-3-color);
 }
-#span-2{
+
+#span-2 {
     font-size: 2.8rem;
     font-weight: 700;
     color: var(--dark-1-color);
 }
-#span-3{
+
+#span-3 {
     font-size: 2.8rem;
     font-weight: 700;
     color: var(--orange-primary-color);
 }
-.feature-content p{
+
+.feature-content p {
     margin: 25px 0;
 }
 
 /* our features section  */
 
-.our-features{
+.our-features {
     display: flex;
     gap: 140px;
 }
 
-.feature-title h3{
+.feature-title h3 {
     font-size: 2.8rem;
     font-weight: 700;
     color: var(--dark-1-color);
@@ -131,27 +153,32 @@ header{
     padding-left: 20px;
     margin-bottom: 24px;
 }
-.feature-item{
+
+.feature-item {
     padding: 30px;
     margin-top: 25px;
     border-radius: 8px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
 }
-.feature-item h4{
+
+.feature-item h4 {
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--dark-1-color);
     margin-bottom: 10px;
 }
-#btn-year{
+
+#btn-year {
     font-size: 4rem;
     font-weight: 700;
 }
-#btn-exp{
+
+#btn-exp {
     font-size: 1.5rem;
     font-weight: 500;
 }
-#btn-large{
+
+#btn-large {
     padding: 45px;
     margin-left: -85px;
     margin-top: -120px;
@@ -159,13 +186,14 @@ header{
 
 /* facts section style */
 
-.facts h3{
+.facts h3 {
     font-size: 2.8rem;
     font-weight: 700;
     color: var(--dark-1-color);
     margin-bottom: 24px;
 }
-.facts-box{
+
+.facts-box {
     border: 1px solid var(--orange-primary-color);
     border-radius: 8px;
     width: 240px;
@@ -176,54 +204,61 @@ header{
     justify-content: center;
     align-items: center;
 }
-.facts-box h4{
+
+.facts-box h4 {
     font-size: 2.8rem;
     font-weight: 600;
     color: var(--dark-2-color);
     margin: 10px 0;
 }
-.facts-box h6{
+
+.facts-box h6 {
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--dark-3-color);
 }
-.facts-box-container{
+
+.facts-box-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 100px;
 }
 
 /* sponsor section styles */
 
-.sponsor h3{
+.sponsor h3 {
     font-size: 2.8rem;
     font-weight: 700;
     color: var(--dark-1-color);
     margin-bottom: 24px;
     text-align: center;
 }
-.sponsor p{
+
+.sponsor p {
     text-align: center;
 }
-.sponsor-logo{
+
+.sponsor-logo {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
-.logo img{
+
+.logo img {
     filter: grayscale(100%);
 }
 
 /* footer section styles */
 
-footer{
+footer {
     max-width: 1440px;
     margin: 0 auto;
     border-radius: 8px;
     background-color: rgb(255, 244, 231);
 
 }
-footer p{
+
+footer p {
     font-size: 1.2rem;
     color: var(--dark-2-color);
     text-align: center;
