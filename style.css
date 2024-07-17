@@ -41,6 +41,10 @@ section {
     line-height: 26px;
 }
 
+.display-none{
+    display: none;
+}
+
 /* nav styles */
 
 header {
@@ -74,6 +78,16 @@ header {
     color: var(--dark-2-color);
 }
 
+/*  nav Responsive smaller device */
+
+@media screen and (max-width: 576px) {
+    .nav-bar , .nav-items{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
 /* banner styles */
 
 .banner {
@@ -96,6 +110,14 @@ header {
 
 .banner-content p {
     margin: 35px 0;
+}
+
+/* banner responsive smaller device */
+
+@media  screen and (max-width: 576px){
+    .banner img{
+        width: 100%;
+    }
 }
 
 /* Feature styles */
@@ -138,6 +160,16 @@ header {
     margin: 25px 0;
 }
 
+/* feature responsive smaller device */
+
+@media screen and (max-width: 576px) {
+    .feature{
+        flex-direction: column;
+    }
+    .feature-image{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
 /* our features section  */
 
 .our-features {
@@ -184,6 +216,20 @@ header {
     margin-top: -120px;
 }
 
+/* our features responsive smaller device */
+
+@media screen and (max-width: 576px) {
+    .our-features{
+        flex-direction: column;
+    }
+    .our-feature-image img{
+        width: 100%;
+    }
+    #btn-large{
+        display: none;
+    }
+}
+
 /* facts section style */
 
 .facts h3 {
@@ -198,7 +244,6 @@ header {
     border-radius: 8px;
     width: 240px;
     height: 240px;
-    margin-left: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -224,6 +269,18 @@ header {
     margin-top: 100px;
 }
 
+/* facts section responsive smaller device */
+
+@media screen and (max-width: 576px) {
+    .facts-box-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+    .facts h3{
+        text-align: center;
+    }
+}
 /* sponsor section styles */
 
 .sponsor h3 {
@@ -248,6 +305,15 @@ header {
     filter: grayscale(100%);
 }
 
+/* sponsor section responsive smaller device */
+
+@media screen and (max-width: 576px) {
+    .sponsor-logo {
+        grid-template-columns: repeat(1,1fr);
+        gap: 35px;
+        justify-items: center;
+    }
+}
 /* footer section styles */
 
 footer {
